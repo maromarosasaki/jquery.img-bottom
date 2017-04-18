@@ -6,7 +6,7 @@
     }
     $target = $(this);
     $(window).on('resize', function () {
-      $imgbottomspan = $parent.find('.img-bottom-span');
+      $imgbottomspan = $target.find('.img-bottom-span');
       if ($imgbottomspan.length > 0) {
         $imgbottomspan.remove();
       }
