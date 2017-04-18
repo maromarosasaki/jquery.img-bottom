@@ -30,4 +30,5 @@ $('.img-bottom').imgBottom();
     ほげほげほげほげほげほげほげほげ</p>
 ```
 
+下記のように画像が右下に回り込みます。
 ![サンプル](https://cloud.githubusercontent.com/assets/2598725/25111272/ed27330e-2424-11e7-856d-fb36b02ca4d9.png)
