@@ -19,6 +19,9 @@
     function dofunc($target) {
       $target.each(function () {
         $img = $(this);
+        //imgタグにstyle追加
+        $img.css({float: 'right', clear: 'right'});
+
         img_height = $img.outerHeight() - offset;
         $parent = $(this).parent();
         $imgbottomspan = $parent.find('.img-bottom-span');
@@ -34,9 +37,6 @@
           cnt++;
           decrease += 1;
         }
-
-        //imgタグにstyle追加
-        $img.css({float: 'right', clear: 'right'});
 
         function aa() {
           if ($imgbottomspan.length > 0) {
