@@ -32,7 +32,6 @@
           aa();
           $imgbottomspan = $parent.find('.img-bottom-span');
           cnt++;
-          console.log(1);
           decrease += 1;
         }
 
