@@ -6,7 +6,7 @@
     }
     $target = $(this);
     $(window).on('resize', function () {
-      $imgbottomspan = $target.find('.img-bottom-span');
+      $imgbottomspan = $target.parent().find('.img-bottom-span');
       if ($imgbottomspan.length > 0) {
         $imgbottomspan.remove();
       }
@@ -47,7 +47,7 @@
           $parent.after($parent_clone);
           parent_height = $parent_clone.outerHeight();
           $insert = $('<span class="img-bottom-span">');
-
+          $parent_clone.remove();
 
           $insert.css({'float': 'right', 'display': 'inline-block', 'width': '1px'});
           $insert.height(parent_height - img_height - decrease);
